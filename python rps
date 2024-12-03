@@ -1,0 +1,40 @@
+rock = '''
+    _______
+---'   ____)
+      (_____)
+      (_____)
+      (____)
+---.__(___)
+'''
+
+paper = '''
+    _______
+---'   ____)____
+          ______)
+          _______)
+         _______)
+---.__________)
+'''
+
+scissors = '''
+    _______
+---'   ____)____
+          ______)
+       __________)
+      (____)
+---.__(___)
+'''
+b=input("rock paper scissors??:")
+
+c=[rock,paper,scissors]
+import random
+a=random.randint(0,2)
+
+if b=="rock":
+    print(f"u:{rock}")
+elif b=="paper":
+    print(F"u:{paper}")
+else:
+    print(f"u:{scissors}")
+d=c[a]
+print(f"ur opp :{d}")
